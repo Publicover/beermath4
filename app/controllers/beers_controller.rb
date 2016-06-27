@@ -36,6 +36,13 @@ class BeersController < ApplicationController
     end
   end
 
+  def destroy
+    @beer = Beer.find(params[:id])
+    @beer.destroy
+
+    redirect_to beers_path
+  end
+
   private
     def beer_params
       params.require(:beer).permit(:name, :brewer, :price, :ounce, :calorie, :rating)
