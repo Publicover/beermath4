@@ -1,0 +1,54 @@
+<center>
+
+<%= form_for @beer do |f| %>
+
+  <% if @beer.errors.any? %>
+    <div id="error_explanation">
+      <p>
+        <%= pluralize(@beer.errors.count, "error") %> prohibited
+        this article from being saved:
+      </p>
+        <% @beer.errors.full_messages.each do |msg| %>
+          <li><center><%= msg %></li>
+        <% end %>
+    </div>
+  <% end %>
+
+  <p>
+    <strong><%= f.label :name %><br></strong>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <strong><%= f.label :brewer %><br></strong>
+    <%= f.text_field :brewer %>
+  </p>
+
+  <p>
+    <strong><%= f.label :price %><br></strong>
+    <%= f.number_field :price %>
+  </p>
+
+  <p>
+    <strong><%= f.label :ounce %><br></strong>
+    <%= f.number_field :ounce %>
+  </p>
+
+  <p>
+    <strong><%= f.label :calorie %><br></strong>
+    <%= f.number_field :calorie %>
+  </p>
+
+  <center><p>
+    <%= f.label :rating %><br>
+    <%= f.select :rating, [[0], [1], [2], [3], [4], [5]] %>
+  </p></center>
+  <!-- <p><strong>Rating</strong>
+  <%= f.select :rating, options_for_select([['opt1'], ['opt2'], ['opt3'], ['opt4'], ['opt5']]) %>
+  </p> -->
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</center>
