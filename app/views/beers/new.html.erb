@@ -1,0 +1,40 @@
+<center>
+
+<h1> NEW BEER </h1>
+
+<%= form_for :beer, url: beers_path do |f| %>
+  <p>
+    <strong><%= f.label :name %><br></strong>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <strong><%= f.label :brewer %><br></strong>
+    <%= f.text_field :brewer %>
+  </p>
+
+  <p>
+    <strong><%= f.label :price %><br></strong>
+    <%= f.number_field :price %>
+  </p>
+
+  <p>
+    <strong><%= f.label :ounce %><br></strong>
+    <%= f.number_field :ounce %>
+  </p>
+
+  <p>
+    <strong><%= f.label :calorie %><br></strong>
+    <%= f.number_field :calorie %>
+  </p>
+
+  <p>
+    <%= f.label :rating %><br>
+    <%= f.select :rating, [[0], [1], [2], [3], [4], [5]] %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</center>
