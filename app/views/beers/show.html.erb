@@ -33,30 +33,26 @@
 </p>
 <br>
 <h2>AND COMMENTS </h2>
-<% @beer.reviews.each do |review| %>
+<%= render @beer.reviews %>
+<br>
+
+
+<h4> ADD A REVIEW? </h4>
+<%= form_for([@beer, @beer.reviews.build]) do |f| %>
   <p>
-    <strong> <%= review.reviewer %> </strong> thinks:
-    </p><p>
-   <%= review.body %>
+    <%= f.label :reviewer %> <br>
+    <%= f.text_field :reviewer %>
+  </p>
+
+  <p>
+    <%= f.label :body %> <br>
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit %>
   </p>
 <% end %>
-<br>
-  <h4> ADD A REVIEW? </h4>
-  <%= form_for([@beer, @beer.reviews.build]) do |f| %>
-    <p>
-      <%= f.label :reviewer %> <br>
-      <%= f.text_field :reviewer %>
-    </p>
-
-    <p>
-      <%= f.label :body %> <br>
-      <%= f.text_area :body %>
-    </p>
-
-    <p>
-      <%= f.submit %>
-    </p>
-  <% end %>
 
 <%= link_to "BACK", beers_path %>  |  <%= link_to "GOT A NEW BEER?", new_beer_path %>
   |  <%= link_to "EDIT THIS BEER", edit_beer_path %>
