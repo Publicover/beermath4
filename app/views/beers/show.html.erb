@@ -32,5 +32,22 @@
   <%= @beer.rating %>
 </p>
 
+  <h3> ADD A REVIEW? </h3>
+  <%= form_for([@beer, @beer.reviews.build]) do |f| %>
+    <p>
+      <%= f.label :reviewer %> <br>
+      <%= f.text_field :reviewer %>
+    </p>
+
+    <p>
+      <%= f.label :body %> <br>
+      <%= f.text_area :body %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+
 <%= link_to "BACK", beers_path %>  |  <%= link_to "GOT A NEW BEER?", new_beer_path %>
   |  <%= link_to "EDIT THIS BEER", edit_beer_path %>
