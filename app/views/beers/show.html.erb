@@ -31,8 +31,17 @@
   <strong>Rating</strong><br>
   <%= @beer.rating %>
 </p>
-
-  <h3> ADD A REVIEW? </h3>
+<br>
+<h2>AND COMMENTS </h2>
+<% @beer.reviews.each do |review| %>
+  <p>
+    <strong> <%= review.reviewer %> </strong> thinks:
+    </p><p>
+   <%= review.body %>
+  </p>
+<% end %>
+<br>
+  <h4> ADD A REVIEW? </h4>
   <%= form_for([@beer, @beer.reviews.build]) do |f| %>
     <p>
       <%= f.label :reviewer %> <br>
