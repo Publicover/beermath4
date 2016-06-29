@@ -5,6 +5,12 @@
 <%= render 'form' %>
 
 <br>
-<center><%= link_to "SEE ALL THE BEERS", beers_path %>  |  <%= link_to "BACK", :back %> 
+<center><%= link_to "SEE ALL THE BEERS", beers_path %>  <br>  <%= link_to "BACK", :back %>
+<br>
+<% if user_signed_in? %>
+  <%= link_to 'SIGN OUT', destroy_user_session_path %>
+<% else %>
+  <%= link_to 'SIGN IN', new_user_session_path %>
+<% end %>
 
 </center>

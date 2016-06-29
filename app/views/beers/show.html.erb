@@ -40,5 +40,11 @@
 <h4> ADD A REVIEW? </h4>
 <%= render 'reviews/form' %>
 
-<%= link_to "BACK", beers_path %>  |  <%= link_to "GOT A NEW BEER?", new_beer_path %>
-  |  <%= link_to "EDIT THIS BEER", edit_beer_path %>
+<%= link_to "BACK TO ALL THE BEERS", beers_path %>  <br>  <%= link_to "GOT A NEW BEER?", new_beer_path %>
+  <br>  <%= link_to "EDIT THIS BEER", edit_beer_path %>
+<br>
+<% if user_signed_in? %>
+  <%= link_to 'SIGN OUT', destroy_user_session_path %>
+<% else %>
+  <%= link_to 'SIGN IN', new_user_session_path %>
+<% end %>

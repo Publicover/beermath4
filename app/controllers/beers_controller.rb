@@ -1,7 +1,8 @@
 class BeersController < ApplicationController
+  before_filter :authenticate_user!, except:
 
   def index
-    @beers = Beer.order(params[:sort] + " " + params[:direction])
+    @beers = Beer.all
   end
 
   def show
@@ -45,7 +46,7 @@ class BeersController < ApplicationController
 
   private
 
-    
+
     def beer_params
       params.require(:beer).permit(:name, :brewer, :price, :ounce, :calorie, :rating)
     end
