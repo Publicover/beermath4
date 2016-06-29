@@ -10,6 +10,8 @@
     <th>Ounces</th>
     <th>Calories</th>
     <th>Rating</th>
+    <th>Cal per Ounce</th>
+    <th>Ounce per Dollar</th>
   </tr>
 
   <% @beers.each do |beer| %>
@@ -20,6 +22,8 @@
       <td><%= beer.ounce %></td>
       <td><%= beer.calorie %></td>
       <td><%= beer.rating %></td>
+      <td><%= beer.calorie / beer.ounce %></td>
+      <td><%= (beer.ounce / (beer.price / 6.0)).round(5) %></td>
       <td><%= link_to 'Show', beer_path(beer) %></td>
       <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
       <td><%= link_to 'Destroy', beer_path(beer),
