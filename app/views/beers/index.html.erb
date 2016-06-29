@@ -4,12 +4,12 @@
 
 <table>
   <tr>
-    <th><%= link_to "Name", :sort => "name"%></th>
-    <th><%= link_to "Brewer", :sort => "brewer"%></th>
-    <th><%= link_to "Price", :sort => "price"%></th>
-    <th><%= link_to "Ounces", :sort => "ounce"%></th>
-    <th><%= link_to "Calories", :sort => "calorie"%></th>
-    <th><%= link_to "Rating", :sort => "rating"%></th>
+    <th><%= sortable "name"%></th>
+    <th><%= sortable "brewer"%></th>
+    <th><%= sortable "price"%></th>
+    <th><%= sortable "ounce"%></th>
+    <th><%= sortable "calorie"%></th>
+    <th><%= sortable "rating"%></th>
   </tr>
 
   <% @beers.each do |beer| %>

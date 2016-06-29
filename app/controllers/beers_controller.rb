@@ -1,7 +1,7 @@
 class BeersController < ApplicationController
 
   def index
-    @beers = Beer.order(params[:sort])
+    @beers = Beer.order(params[:sort] + " " + params[:direction])
   end
 
   def show
