@@ -1,6 +1,14 @@
+<center>
+
 <p>Dashboards#index</p>
 <p>Find me in app/views/dashboards/index.html.erb</p>
 
 <h1> START HERE </h1>
 
-<%= link_to "SEE ALL THE BEERS", beers_path %>  <br>  <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
+<%= link_to "SEE ALL THE BEERS", beers_path %>  <br>
+<% if user_signed_in? %>
+  <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete %>
+<% else %>
+  <%= link_to 'SIGN IN', new_user_session_path %>
+<% end %>
+</center>
