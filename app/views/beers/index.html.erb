@@ -2,14 +2,14 @@
 
 <h1> ALL THE BEERS </h1>
 
-<table>
+<table class="table table-bordered table-striped">
   <tr>
-    <th><%= sortable "name"%></th>
-    <th><%= sortable "brewer"%></th>
-    <th><%= sortable "price"%></th>
-    <th><%= sortable "ounce"%></th>
-    <th><%= sortable "calorie"%></th>
-    <th><%= sortable "rating"%></th>
+    <th><%= sort_link "name"%></th>
+    <th><%= sort_link "brewer"%></th>
+    <th><%= sort_link "price"%></th>
+    <th><%= sort_link "ounce"%></th>
+    <th><%= sort_link "calorie"%></th>
+    <th><%= sort_link "rating"%></th>
   </tr>
 
   <% @beers.each do |beer| %>

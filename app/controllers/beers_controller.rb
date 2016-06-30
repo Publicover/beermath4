@@ -1,8 +1,10 @@
 class BeersController < ApplicationController
-  before_filter :authenticate_user!, except:
+  before_filter :authenticate_user!, except: [:index, :show]
+  # before_filter :authenticate_user!, except: :show
+  helper_method :sort_column, :sort_direction
 
   def index
-    @beers = Beer.all
+    @beers = Beer.order("#{sort_column} #{sort_direction}")
   end
 
   def show
@@ -46,12 +48,16 @@ class BeersController < ApplicationController
 
   private
 
+    def sortable_columns
+      ["name", "brewer", "price", "ounce", "calorie", "rating"]
+    end
+
     def sort_column
-      params[:sort] || "name"
+      sortable_columns.include?(params[:column]) ? params[:column] : "name"
     end
 
     def sort_direction
-      params[:direction] || "asc"
+      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
     end
 
     def beer_params
