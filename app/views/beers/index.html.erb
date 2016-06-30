@@ -35,7 +35,7 @@
 <%= link_to "BACK TO ALL THE BEERS", root_path %>  <br>
 
 <% if user_signed_in? %>
-  <%= link_to 'SIGN OUT', destroy_user_session_path %>
+  <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete %>
 <% else %>
   <%= link_to 'SIGN IN', new_user_session_path %>
 <% end %>
