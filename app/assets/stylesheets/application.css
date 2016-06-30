@@ -18,11 +18,12 @@
   color: red;
 }
 
-#error_explanation {
+.error_explanation {
   color: red;
+  text-align: center;
 }
 
-#notice {
+.notice {
   color: red;
   text-align: center;
 }

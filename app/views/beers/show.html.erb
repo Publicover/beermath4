@@ -33,7 +33,12 @@
 </p>
 <br>
 <h4 id="comment_header">AND COMMENTS </h4>
+
+
 <%= render @beer.reviews %>
+  <% if @beer.reviews  %>
+    <p> NO ONE HAS AN OPINION YET. WANT TO SHARE YOURS? </p>
+  <% end %>
 <br>
 
 
