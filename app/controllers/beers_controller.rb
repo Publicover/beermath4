@@ -46,6 +46,13 @@ class BeersController < ApplicationController
 
   private
 
+    def sort_column
+      params[:sort] || "name"
+    end
+
+    def sort_direction
+      params[:direction] || "asc"
+    end
 
     def beer_params
       params.require(:beer).permit(:name, :brewer, :price, :ounce, :calorie, :rating)
