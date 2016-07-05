@@ -49,7 +49,7 @@ class BeersController < ApplicationController
   private
 
     def sortable_columns
-      ["name", "brewer", "price", "ounce", "calorie", "rating"]
+      ["name", "brewer", "price", "ounce", "calorie", "rating", "abv", "abv_per_cal", "abv_per_price", "calorie_per_price", "calorie_per_ounce"]
     end
 
     def sort_column
