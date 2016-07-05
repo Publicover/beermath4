@@ -11,6 +11,8 @@
     <th><%= sort_link "calorie"%></th>
     <th><%= sort_link "abv"%></th>
     <th><%= sort_link "rating"%></th>
+    <th><%= sort_link "abv_per_cal"%></th>
+    <th><%= sort_link "abv_per_price"%></th>
   </tr>
 
   <% @beers.each do |beer| %>
@@ -22,6 +24,8 @@
       <td><%= beer.calorie %></td>
       <td><%= beer.abv %></td>
       <td><%= beer.rating %></td>
+      <td><%= beer.abv_per_cal %></td>
+      <td><%= beer.abv_per_price %></td>
       <td><%= link_to 'Show', beer_path(beer) %></td>
       <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
       <td><%= link_to 'Destroy', beer_path(beer),
