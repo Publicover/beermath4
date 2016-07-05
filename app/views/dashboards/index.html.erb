@@ -3,8 +3,14 @@
 <p>Dashboards#index</p>
 <p>Find me in app/views/dashboards/index.html.erb</p>
 
-<h1> START HERE </h1>
-
+<p>
+<h3>
+  Right now, the best beer is
+  <p><h1><div class="bestbeer"><%= (Beer.order("abv_per_cal DESC").first).name %></div></h1></p>
+  <h3>with <div class="bestbeer"><%= Beer.maximum(:abv_per_cal) %> ABV per calorie.</div></h3>
+</h3>
+</p>
+<br>
 <%= link_to "SEE ALL THE BEERS", beers_path %>  <br>
 <% if user_signed_in? %>
   <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete %>
@@ -13,5 +19,5 @@
 <% end %>
 
 <br>
-<%= link_to "Sign up", new_user_registration_path %>
+<%= link_to "SIGN UP", new_user_registration_path %>
 </center>
