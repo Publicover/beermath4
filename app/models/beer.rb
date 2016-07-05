@@ -1,5 +1,6 @@
 class Beer < ActiveRecord::Base
-  before_save :abv_slash_cal, :abv_slash_price, :cal_slash_price, :cal_slash_ounce
+  before_save :abv_slash_cal, :abv_slash_price, :cal_slash_price,
+              :cal_slash_ounce
   has_many :reviews, dependent: :destroy
   validates :name, presence: true,
                    length: { minimum: 2 }

@@ -16,7 +16,7 @@
 <% if best_beer.rating == 0 %>
   <h3> Rating of <%= "#{best_beer.rating}" %>? Yeah, it'll get you messed up but it tastes pretty awful. </h3>
 <% elsif best_beer.rating == 1 %>
-  <h3> Rating of <%= "#{best_beer.rating}" %>? Eh, you've had worse. </h3>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? Eh, you've had worse. Probably. </h3>
 <% elsif best_beer.rating == 2 %>
   <h3> Rating of <%= "#{best_beer.rating}" %>? Surprising, right? </h3>
 <% elsif best_beer.rating == 3 %>
@@ -30,6 +30,7 @@
 <br>
 
 <%= link_to "SEE ALL THE BEERS", beers_path %>  <br>
+<%= link_to "GOT A NEW BEER?", new_beer_path %> <br>
 <% if user_signed_in? %>
   <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete %>
 <% else %>
