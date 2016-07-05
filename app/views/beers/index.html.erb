@@ -9,6 +9,7 @@
     <th><%= sort_link "price"%></th>
     <th><%= sort_link "ounce"%></th>
     <th><%= sort_link "calorie"%></th>
+    <th><%= sort_link "abv"%></th>
     <th><%= sort_link "rating"%></th>
   </tr>
 
@@ -19,6 +20,7 @@
       <td><%= beer.price %></td>
       <td><%= beer.ounce %></td>
       <td><%= beer.calorie %></td>
+      <td><%= beer.abv %></td>
       <td><%= beer.rating %></td>
       <td><%= link_to 'Show', beer_path(beer) %></td>
       <td><%= link_to 'Edit', edit_beer_path(beer) %></td>

@@ -39,6 +39,11 @@
     <%= f.number_field :calorie %>
   </p>
 
+  <p>
+    <strong><%= f.label :abv %><br></strong>
+    <%= f.number_field :abv %>
+  </p>
+
   <center><p>
     <%= f.label :rating %><br>
     <%= f.select :rating, [[0], [1], [2], [3], [4], [5]] %>
