@@ -64,4 +64,6 @@ class BeersController < ApplicationController
       params.require(:beer).permit(:name, :brewer, :price, :ounce, :calorie, :rating, :abv)
     end
 
+    #comment to test git
+
 end
