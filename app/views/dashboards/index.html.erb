@@ -7,7 +7,7 @@
 <h3>
   Right now, the best beer is
   <p><h1><div class="bestbeer"><%= (Beer.order("abv_per_cal DESC").first).name %></div></h1></p>
-  <h3>with <div class="bestbeer"><%= Beer.maximum(:abv_per_cal) %> ABV per calorie.</div></h3>
+  <h3>with <p><div class="bestbeer"><%= Beer.maximum(:abv_per_cal) %> ABV per calorie.</div></p></h3>
 </h3>
 </p>
 <br>
