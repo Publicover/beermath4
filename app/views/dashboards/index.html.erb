@@ -3,14 +3,32 @@
 <p>Dashboards#index</p>
 <p>Find me in app/views/dashboards/index.html.erb</p>
 
+<% best_beer = Beer.order("abv_per_price DESC").first %>
+
 <p>
 <h3>
   Right now, the best beer is
-  <p><h1><div class="bestbeer"><%= (Beer.order("abv_per_cal DESC").first).name %></div></h1></p>
-  <h3>with <p><div class="bestbeer"><%= Beer.maximum(:abv_per_cal) %> ABV per calorie.</div></p></h3>
+  <p><h1><div class="bestbeer"><%= best_beer.name %></div></h1></p>
+  <h3>with <p><div class="bestbeer"><%= best_beer.abv_per_price %> ABV per dollar.</div></p></h3>
 </h3>
 </p>
+
+<% if best_beer.rating == 0 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? Yeah, it'll get you messed up but it tastes pretty awful. </h3>
+<% elsif best_beer.rating == 1 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? Eh, you've had worse. </h3>
+<% elsif best_beer.rating == 2 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? Surprising, right? </h3>
+<% elsif best_beer.rating == 3 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? High alcohol, middle of the road taste. </h3>
+<% elsif best_beer.rating == 4 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? Good stuff for sure. </h3>
+<% elsif best_beer.rating == 5 %>
+  <h3> Rating of <%= "#{best_beer.rating}" %>? And it happens to taste fucking great. </h3>
+<% end %>
+
 <br>
+
 <%= link_to "SEE ALL THE BEERS", beers_path %>  <br>
 <% if user_signed_in? %>
   <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete %>
