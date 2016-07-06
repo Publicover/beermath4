@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  brewer: MyString
-  price: 1
-  ounce: 1
-  calorie: 1
-  rating: 1
+  name: BeerOne
+  brewer: BrewerOne
+  price: 1000
+  ounce: 12
+  calorie: 150
+  rating: 3
 
 two:
-  name: MyString
-  brewer: MyString
-  price: 1
-  ounce: 1
-  calorie: 1
-  rating: 1
+  name: BeerTwo
+  brewer: BrewerTwo
+  price: 1500
+  ounce: 16
+  calorie: 200
+  rating: 3
