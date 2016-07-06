@@ -1,0 +1,102 @@
+name,brewer,price,ounce,calorie,rating,abv
+Amber,Abita,899,12,128,3,45
+Golden,Abita,899,12,125,3,42
+Jockomo IPA,Abita,899,12,190,3,65
+Light,Abita,899,12,118,3,40
+Purple Haze,Abita,899,12,128,3,42
+Restoration Pale Ale,Abita,899,12,167,3,52
+Turbodog,Abita,899,12,168,3,56
+Wrought Iron IPA,Abita,899,12,209,3,69
+Anchor Steam,Anchor,899,12,153,3,49
+Two Hearted Ale,Bells,1099,12,210,3,70
+Black Chocolate Stout,Brooklyn,799,12,320,3,100
+Brooklyn Lager,Brooklyn,999,12,170,3,52
+Brown Ale,Brooklyn,999,12,190,3,56
+East India Pale Ale,Brooklyn,999,12,200,3,69
+Greenmarket Wheat,Brooklyn,899,12,165,3,50
+Half Ale,Brooklyn,999,12,102,3,34
+Local 1,Brooklyn,999,26,243,3,90
+Local 2,Brooklyn,999,26,242,3,90
+Oktoberfest,Brooklyn,999,12,175,3,55
+Pilsner,Brooklyn,999,12,155,3,51
+Summer Ale,Brooklyn,999,12,150,3,50
+Bud Lite,Budweiser,1499,12,110,3,42
+Bud Lite Lime,Budweiser,1099,12,110,3,42
+All Day IPA,Founders,999,12,147,3,47
+Black Rye,Founders,1099,12,226,3,75
+Black Rye,Founders,1099,12,270,3,75
+Breakfast Stout,Founders,1099,12,270,3,83
+Centennial IPA,Founders,999,12,224,3,72
+Curmudgeon Old Ale,Founders,1199,12,311,3,98
+Dark Penance,Founders,1199,12,272,3,89
+Devil Dancer,Founders,1999,12,374,3,120
+Dirty Bastard,Founders,999,12,273,3,85
+Double Trouble,Founders,1199,12,278,3,94
+Imperial Stout,Founders,1000,12,379,3,105
+Kentucky Bourbon Stout,Founders,1000,12,347,3,112
+Nitro Oatmeal Stout,Founders,1000,12,168,3,45
+Pale Ale,Founders,999,12,163,3,54
+Porter,Founders,999,12,244,3,65
+Red’s Rye PA,Founders,1099,12,211,3,66
+Rübæus,Founders,1099,12,223,3,57
+Draught,Guinness,899,15,125,3,42
+Hamm's,Hamm's,1299,12,144,3,47
+Hi-Pitch,Hi-Wire,999,12,201,3,67
+A Little Sumpin',Lagunitas,1099,12,225,3,75
+Censored,Lagunitas,899,12,202,3,67.5
+Daytime ,Lagunitas,999,12,140,3,46.5
+Dogtown Pale,Lagunitas,899,12,186,3,62
+Hop Stoopid,Lagunitas,449,22,430,3,80
+Imperial Stout,Lagunitas,599,22,XXXXX,3,99
+IPA,Lagunitas,999,12,186,3,62
+Maximus,Lagunitas,1099,12,246,3,82
+Pils,Lagunitas,899,12,180,3,60
+Sucks,Lagunitas,1099,12,297,3,80
+Undercover Investigation Shutdown,Lagunitas,1099,12,292,3,97.5
+Michelob Light,Michelob,1099,12,113,3,43
+ULTRA,Michelob,999,12,95,3,42
+ULTRA Amber,Michelob,999,12,95,3,40
+ULTRA Light Cider,Michelob,999,12,120,3,40
+ULTRA Lime Cactus,Michelob,699,12,95,3,40
+High Life,Miller,1199,12,143,3,46
+Miller Lite,Miller,1499,12,96,3,42
+Old Rasputin,North Coast,899,12,303,3,90
+Pabst Blue Ribbon,Pabst,1299,12,144,3,46.5
+Boston Lager,Sam Adams,1499,12,175,3,49
+Schlitz,Schlitz,1599,12,146,3,47
+Bock,Shiner,1199,12,143,3,44
+Bigfoot Ale,Sierra Nevada,999,12,330,3,96
+Arrogant Bastard,Stone,495,12,187,3,72
+Double Bastard,Stone,1000,12,336,3,112
+IPA,Stone,1099,12,207,3,69
+Old Guardian,Stone,1000,12,342,3,112
+Pale Ale,Stone,1000,12,162,3,54
+Ruination IPA,Stone,599,22,451,3,82
+Ruination IPA,Stone,1299,12,246,3,82
+Smoked Porter,Stone,599,22,177,3,59
+Sublimely Self-Righteous Ale,Stone,1099,12,261,3,87
+Baba Black Lager,Uinta,999,12,120,3,40
+Ale,Yuengling,700,12,150,3,50
+Black & Tan,Yuengling,700,12,155,3,45
+Lager,Yuengling,700,12,140,3,44
+Light,Yuengling,700,12,98,3,38
+Light Lager,Yuengling,700,12,96,3,36
+Porter,Yuengling,700,12,155,3,45
+Premium,Yuengling,700,12,140,3,44
+Barrell Aged Gonzo,Flying Dog,1899,26,603.25,3,95
+Bloodline,Flying Dog,1199,12,210,3,70
+Counter Culture,Flying Dog,999,12,180,3,60
+Dead Rise,Flying Dog,999,12,168,3,56
+Doggie Style,Flying Dog,999,12,165,3,55
+Double Pale Ale,Flying Dog,1499,12,345,3,115
+Easy IPA,Flying Dog,999,12,141,3,47
+Horn Dog,Flying Dog,1499,12,306,3,102
+In Heat,Flying Dog,999,12,141,3,47
+60 Minute IPA,Dogfish Head,1199,12,209,3,60
+75 Minute IPA,Dogfish Head,999,26,476,3,75
+90 Minute IPA,Dogfish Head,1099,12,294,3,90
+Burton Baton,Dogfish Head,1599,12,320,3,100
+Indian Brown,Dogfish Head,1199,12,216,3,72
+Midas Touch,Dogfish Head,1399,12,307,3,90
+Fat Tire,New Belgium,999,12,160,3,52
+Slow Ride ,New Belgium,999,12,140,3,45
