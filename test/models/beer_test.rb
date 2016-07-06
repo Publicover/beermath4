@@ -3,10 +3,6 @@ require "#{Rails.root}/app/models/beer.rb"
 
 class BeerTest < ActiveSupport::TestCase
 
-  # def setup
-  #   @beer = beers(:one)
-  # end
-
   test "assert true" do
     true
   end
@@ -23,6 +19,26 @@ class BeerTest < ActiveSupport::TestCase
   test "beer returns a brewer" do
     beer = beers(:one)
     assert_equal "BrewerOne", beer.brewer
+  end
+
+  test "beer returns a price" do
+    beer = beers(:one)
+    assert_equal 1000, beer.price
+  end
+
+  test "beer returns a ounce" do
+    beer = beers(:one)
+    assert_equal 10, beer.ounce
+  end
+
+  test "beer returns a rating" do
+    beer = beers(:one)
+    assert_equal 3, beer.rating
+  end
+
+  test "beer returns a abv" do
+    beer = beers(:one)
+    assert_equal 10, beer.abv
   end
 
 end

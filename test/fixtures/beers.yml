@@ -8,10 +8,10 @@ one:
   calorie: 200
   rating: 3
   abv: 10
-  abv_per_cal: 0.05
-  abv_per_price: 0.01
-  calorie_per_ounce: 20
-  calorie_per_price: 0.2
+  # abv_per_cal: 0.05
+  # abv_per_price: 0.01
+  # calorie_per_ounce: 20
+  # calorie_per_price: 0.2
 
 two:
   name: BeerTwo
