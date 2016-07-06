@@ -2,7 +2,9 @@ require 'test_helper'
 require "#{Rails.root}/app/models/user.rb"
 
 class UserTest < ActiveSupport::TestCase
-  test "the truth" do
-    assert true
+
+  test "user class exists" do
+    assert User
   end
+
 end

@@ -4,14 +4,24 @@ one:
   name: BeerOne
   brewer: BrewerOne
   price: 1000
-  ounce: 12
-  calorie: 150
+  ounce: 10
+  calorie: 200
   rating: 3
+  abv: 10
+  abv_per_cal: 0.05
+  abv_per_price: 0.01
+  calorie_per_ounce: 20
+  calorie_per_price: 0.2
 
 two:
   name: BeerTwo
   brewer: BrewerTwo
-  price: 1500
-  ounce: 16
-  calorie: 200
+  price: 2000
+  ounce: 20
+  calorie: 100
   rating: 3
+  abv: 20
+  abv_per_cal: 0.2
+  abv_per_price: 0.01
+  calorie_per_ounce: 5
+  calorie_per_price: 0.05
