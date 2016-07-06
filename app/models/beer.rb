@@ -7,11 +7,7 @@ class Beer < ActiveRecord::Base
 
 
   private
-    # def cal_plus_ounce
-    #   sum_value = self.calorie + self.ounce
-    #   self.assign_attributes(sum: sum_value)
-    # end
-
+    
     def abv_slash_cal
       abvcal = (self.abv.to_f / self.calorie).round(5)
       self.assign_attributes(abv_per_cal: abvcal)
