@@ -7,4 +7,9 @@ class UserTest < ActiveSupport::TestCase
     assert User
   end
 
+  test "user has email" do
+    user = users(:one)
+    assert_equal "test1@test.com", user.email
+  end
+
 end
