@@ -14,27 +14,27 @@ class Beer < ActiveRecord::Base
 
   # call full database csv with
     # rake import:beers
-    
+
 
   private
 
     def abv_slash_cal
-      abvcal = (self.abv.to_f / self.calorie).round(5)
+      abvcal = ((self.abv.to_f * 72) / (self.calorie * 6)).round(5)
       self.assign_attributes(abv_per_cal: abvcal)
     end
 
     def abv_slash_price
-      abvdollar = (self.abv.to_f / self.price).round(5)
+      abvdollar = ((self.abv.to_f * 72) / self.price).round(5)
       self.assign_attributes(abv_per_price: abvdollar)
     end
 
     def cal_slash_price
-      calprice = (self.calorie.to_f / self.price).round(5)
+      calprice = ((self.calorie.to_f * 6) / self.price).round(5)
       self.assign_attributes(calorie_per_price: calprice)
     end
 
     def cal_slash_ounce
-      calounce = (self.calorie.to_f / self.ounce).round(5)
+      calounce = ((self.calorie.to_f * 6) / (self.ounce * 6)).round(5)
       self.assign_attributes(calorie_per_ounce: calounce)
     end
 
