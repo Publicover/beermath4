@@ -1,8 +1,7 @@
 <center>
 
-<p>Dashboards#index</p>
-<p>Find me in app/views/dashboards/index.html.erb</p>
-
+<%= link_to "HOME", root_path %>
+<br>
 <% best_beer = Beer.order("abv_per_price DESC").first %>
 
 <p>
@@ -12,6 +11,7 @@
   <h3>with <p><div class="bestbeer"><%= best_beer.abv_per_price %> ABV per dollar.</div></p></h3>
 </h3>
 </p>
+
 
 <% if best_beer.rating == 0 %>
   <h3> Rating of <%= "#{best_beer.rating}" %>? Yeah, it'll get you messed up but it tastes pretty awful. </h3>

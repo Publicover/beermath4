@@ -5,9 +5,19 @@ class Beer < ActiveRecord::Base
   validates :name, presence: true,
                    length: { minimum: 2 }
 
+# BREWERY_DB_KEY = #{ENV["BREWERY_DB_KEY"]}"
+# brewery db request: http://api.brewerydb.com/v2/?key=#{ENV["BREWERY_DB_KEY"]}
+
+  # def initialize
+  #   @response = HTTParty.post("http://api.brewerydb.com/v2/?key=#{ENV["BREWERY_DB_KEY"]}")
+  # end
+
+  # call full database csv with
+    # rake import:beers
+    
 
   private
-    
+
     def abv_slash_cal
       abvcal = (self.abv.to_f / self.calorie).round(5)
       self.assign_attributes(abv_per_cal: abvcal)
