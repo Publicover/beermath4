@@ -43,6 +43,16 @@
     <strong><%= f.label :abv %><br></strong>
     <%= f.number_field :abv %>
   </p>
+<br>
+  <p>
+    <strong><%= f.label "is this a bomber?" %><br></strong>
+    <%= f.check_box :bomber %>
+  </p>
+  
+  <p>
+    <strong><%= f.label "is this a six-pack?" %><br></strong>
+    <%= f.check_box :quantity %>
+  </p>
 
   <center><p>
     <%= f.label :rating %><br>

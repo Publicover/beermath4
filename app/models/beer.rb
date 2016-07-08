@@ -19,8 +19,16 @@ class Beer < ActiveRecord::Base
   private
 
     def abv_slash_cal
-      abvcal = ((self.abv.to_f * 72) / (self.calorie * 6)).round(5)
-      self.assign_attributes(abv_per_cal: abvcal)
+      if self.bomber
+        abvcal = ((self.abv.to_f * 22) / (self.calorie)).round(5)
+        self.assign_attributes(abv_per_cal: abvcal)
+      elsif self.quantity
+        abvcal = ((self.abv.to_f * 72) / (self.calorie * 6)).round(5)
+        self.assign_attributes(abv_per_cal: abvcal)
+      else
+        abvcal = ((self.abv.to_f * 72) / (self.calorie * 4)).round(5)
+        self.assign_attributes(abv_per_cal: abvcal)
+      end
     end
 
     def abv_slash_price
