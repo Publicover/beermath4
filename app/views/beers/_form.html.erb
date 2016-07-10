@@ -43,16 +43,12 @@
     <strong><%= f.label :abv %><br></strong>
     <%= f.number_field :abv %>
   </p>
+
+  <p>
+    <strong><%= f.label "how many in the pack??" %><br></strong>
+    <%= f.select :pack, [["1", 1], ["6", 6], ["12", 12], ["18", 18], ["24", 24], ["30", 30]]%>
+  </p>
 <br>
-  <p>
-    <strong><%= f.label "is this a bomber?" %><br></strong>
-    <%= f.check_box :bomber %>
-  </p>
-  
-  <p>
-    <strong><%= f.label "is this a six-pack?" %><br></strong>
-    <%= f.check_box :quantity %>
-  </p>
 
   <center><p>
     <%= f.label :rating %><br>

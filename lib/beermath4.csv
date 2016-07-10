@@ -1,102 +1,102 @@
-name,brewer,price,ounce,calorie,rating,abv,bomber,quantity
-Amber,Abita,899,12,128,3,45,False,True
-Golden,Abita,899,12,125,3,42,False,True
-Jockomo IPA,Abita,899,12,190,3,65,False,True
-Light,Abita,899,12,118,3,40,False,True
-Purple Haze,Abita,899,12,128,3,42,False,True
-Restoration Pale Ale,Abita,899,12,167,3,52,False,True
-Turbodog,Abita,899,12,168,3,56,False,True
-Wrought Iron IPA,Abita,899,12,209,3,69,False,True
-Anchor Steam,Anchor,899,12,153,3,49,False,True
-Two Hearted Ale,Bells,1099,12,210,3,70,False,True
-Black Chocolate Stout,Brooklyn,799,12,320,3,100,False,True
-Brooklyn Lager,Brooklyn,999,12,170,3,52,False,True
-Brown Ale,Brooklyn,999,12,190,3,56,False,True
-East India Pale Ale,Brooklyn,999,12,200,3,69,False,True
-Greenmarket Wheat,Brooklyn,899,12,165,3,50,False,True
-Half Ale,Brooklyn,999,12,102,3,34,False,True
-Local 1,Brooklyn,999,26,243,3,90,False,True
-Local 2,Brooklyn,999,26,242,3,90,False,True
-Oktoberfest,Brooklyn,999,12,175,3,55,False,True
-Pilsner,Brooklyn,999,12,155,3,51,False,True
-Summer Ale,Brooklyn,999,12,150,3,50,False,True
-Bud Lite,Budweiser,1499,12,110,3,42,False,True
-Bud Lite Lime,Budweiser,1099,12,110,3,42,False,True
-All Day IPA,Founders,999,12,147,3,47,False,True
-Black Rye,Founders,1099,12,226,3,75,False,True
-Black Rye,Founders,1099,12,270,3,75,False,True
-Breakfast Stout,Founders,1099,12,270,3,83,False,True
-Centennial IPA,Founders,999,12,224,3,72,False,True
-Curmudgeon Old Ale,Founders,1199,12,311,3,98,False,True
-Dark Penance,Founders,1199,12,272,3,89,False,True
-Devil Dancer,Founders,1999,12,374,3,120,False,True
-Dirty Bastard,Founders,999,12,273,3,85,False,True
-Double Trouble,Founders,1199,12,278,3,94,False,True
-Imperial Stout,Founders,1000,12,379,3,105,False,True
-Kentucky Bourbon Stout,Founders,1000,12,347,3,112,False,True
-Nitro Oatmeal Stout,Founders,1000,12,168,3,45,False,True
-Pale Ale,Founders,999,12,163,3,54,False,True
-Porter,Founders,999,12,244,3,65,False,True
-Red’s Rye PA,Founders,1099,12,211,3,66,False,True
-Rübæus,Founders,1099,12,223,3,57,False,True
-Draught,Guinness,899,15,125,3,42,False,True
-Hamm's,Hamm's,1299,12,144,3,47,False,True
-Hi-Pitch,Hi-Wire,999,12,201,3,67,False,True
-A Little Sumpin',Lagunitas,1099,12,225,3,75,False,True
-Censored,Lagunitas,899,12,202,3,67.5,False,True
-Daytime ,Lagunitas,999,12,140,3,46.5,False,True
-Dogtown Pale,Lagunitas,899,12,186,3,62,False,True
-Hop Stoopid,Lagunitas,449,22,430,3,80,False,True
-Imperial Stout,Lagunitas,599,22,XXXXX,3,99,False,True
-IPA,Lagunitas,999,12,186,3,62,False,True
-Maximus,Lagunitas,1099,12,246,3,82,False,True
-Pils,Lagunitas,899,12,180,3,60,False,True
-Sucks,Lagunitas,1099,12,297,3,80,False,True
-Undercover Investigation Shutdown,Lagunitas,1099,12,292,3,97.5,False,True
-Michelob Light,Michelob,1099,12,113,3,43,False,True
-ULTRA,Michelob,999,12,95,3,42,False,True
-ULTRA Amber,Michelob,999,12,95,3,40,False,True
-ULTRA Light Cider,Michelob,999,12,120,3,40,False,True
-ULTRA Lime Cactus,Michelob,699,12,95,3,40,False,True
-High Life,Miller,1199,12,143,3,46,False,True
-Miller Lite,Miller,1499,12,96,3,42,False,True
-Old Rasputin,North Coast,899,12,303,3,90,False,True
-Pabst Blue Ribbon,Pabst,1299,12,144,3,46.5,False,True
-Boston Lager,Sam Adams,1499,12,175,3,49,False,True
-Schlitz,Schlitz,1599,12,146,3,47,False,True
-Bock,Shiner,1199,12,143,3,44,False,True
-Bigfoot Ale,Sierra Nevada,999,12,330,3,96,False,True
-Arrogant Bastard,Stone,495,12,187,3,72,False,True
-Double Bastard,Stone,1000,12,336,3,112,False,True
-IPA,Stone,1099,12,207,3,69,False,True
-Old Guardian,Stone,1000,12,342,3,112,False,True
-Pale Ale,Stone,1000,12,162,3,54,False,True
-Ruination IPA,Stone,599,22,451,3,82,False,True
-Ruination IPA,Stone,1299,12,246,3,82,False,True
-Smoked Porter,Stone,599,22,177,3,59,False,True
-Sublimely Self-Righteous Ale,Stone,1099,12,261,3,87,False,True
-Baba Black Lager,Uinta,999,12,120,3,40,False,True
-Ale,Yuengling,700,12,150,3,50,False,True
-Black & Tan,Yuengling,700,12,155,3,45,False,True
-Lager,Yuengling,700,12,140,3,44,False,True
-Light,Yuengling,700,12,98,3,38,False,True
-Light Lager,Yuengling,700,12,96,3,36,False,True
-Porter,Yuengling,700,12,155,3,45,False,True
-Premium,Yuengling,700,12,140,3,44,False,True
-Barrell Aged Gonzo,Flying Dog,1899,26,603.25,3,95,False,True
-Bloodline,Flying Dog,1199,12,210,3,70,False,True
-Counter Culture,Flying Dog,999,12,180,3,60,False,True
-Dead Rise,Flying Dog,999,12,168,3,56,False,True
-Doggie Style,Flying Dog,999,12,165,3,55,False,True
-Double Pale Ale,Flying Dog,1499,12,345,3,115,False,True
-Easy IPA,Flying Dog,999,12,141,3,47,False,True
-Horn Dog,Flying Dog,1499,12,306,3,102,False,True
-In Heat,Flying Dog,999,12,141,3,47,False,True
-60 Minute IPA,Dogfish Head,1199,12,209,3,60,False,True
-75 Minute IPA,Dogfish Head,999,26,476,3,75,False,True
-90 Minute IPA,Dogfish Head,1099,12,294,3,90,False,True
-Burton Baton,Dogfish Head,1599,12,320,3,100,False,True
-Indian Brown,Dogfish Head,1199,12,216,3,72,False,True
-Midas Touch,Dogfish Head,1399,12,307,3,90,False,True
-Fat Tire,New Belgium,999,12,160,3,52,False,True
-Slow Ride ,New Belgium,999,12,140,3,45,False,True
+name,brewer,price,ounce,calorie,rating,abv,bomber,quantity,pack
+Amber,Abita,899,12,128,3,45,False,True,6
+Golden,Abita,899,12,125,3,42,False,True,6
+Jockomo IPA,Abita,899,12,190,3,65,False,True,6
+Light,Abita,899,12,118,3,40,False,True,6
+Purple Haze,Abita,899,12,128,3,42,False,True,6
+Restoration Pale Ale,Abita,899,12,167,3,52,False,True,6
+Turbodog,Abita,899,12,168,3,56,False,True,6
+Wrought Iron IPA,Abita,899,12,209,3,69,False,True,6
+Anchor Steam,Anchor,899,12,153,3,49,False,True,6
+Two Hearted Ale,Bells,1099,12,210,3,70,False,True,6
+Black Chocolate Stout,Brooklyn,799,12,320,3,100,False,True,6
+Brooklyn Lager,Brooklyn,999,12,170,3,52,False,True,6
+Brown Ale,Brooklyn,999,12,190,3,56,False,True,6
+East India Pale Ale,Brooklyn,999,12,200,3,69,False,True,6
+Greenmarket Wheat,Brooklyn,899,12,165,3,50,False,True,6
+Half Ale,Brooklyn,999,12,102,3,34,False,True,6
+Local 1,Brooklyn,999,26,243,3,90,False,True,6
+Local 2,Brooklyn,999,26,242,3,90,False,True,6
+Oktoberfest,Brooklyn,999,12,175,3,55,False,True,6
+Pilsner,Brooklyn,999,12,155,3,51,False,True,6
+Summer Ale,Brooklyn,999,12,150,3,50,False,True,6
+Bud Lite,Budweiser,1499,12,110,3,42,False,True,6
+Bud Lite Lime,Budweiser,1099,12,110,3,42,False,True,6
+All Day IPA,Founders,999,12,147,3,47,False,True,6
+Black Rye,Founders,1099,12,226,3,75,False,True,6
+Black Rye,Founders,1099,12,270,3,75,False,True,6
+Breakfast Stout,Founders,1099,12,270,3,83,False,True,6
+Centennial IPA,Founders,999,12,224,3,72,False,True,6
+Curmudgeon Old Ale,Founders,1199,12,311,3,98,False,True,6
+Dark Penance,Founders,1199,12,272,3,89,False,True,6
+Devil Dancer,Founders,1999,12,374,3,120,False,True,6
+Dirty Bastard,Founders,999,12,273,3,85,False,True,6
+Double Trouble,Founders,1199,12,278,3,94,False,True,6
+Imperial Stout,Founders,1000,12,379,3,105,False,True,6
+Kentucky Bourbon Stout,Founders,1000,12,347,3,112,False,True,6
+Nitro Oatmeal Stout,Founders,1000,12,168,3,45,False,True,6
+Pale Ale,Founders,999,12,163,3,54,False,True,6
+Porter,Founders,999,12,244,3,65,False,True,6
+Red’s Rye PA,Founders,1099,12,211,3,66,False,True,6
+Rübæus,Founders,1099,12,223,3,57,False,True,6
+Draught,Guinness,899,15,125,3,42,False,True,6
+Hamm's,Hamm's,1299,12,144,3,47,False,True,6
+Hi-Pitch,Hi-Wire,999,12,201,3,67,False,True,6
+A Little Sumpin',Lagunitas,1099,12,225,3,75,False,True,6
+Censored,Lagunitas,899,12,202,3,67.5,False,True,6
+Daytime ,Lagunitas,999,12,140,3,46.5,False,True,6
+Dogtown Pale,Lagunitas,899,12,186,3,62,False,True,6
+Hop Stoopid,Lagunitas,449,22,430,3,80,False,True,6
+Imperial Stout,Lagunitas,599,22,XXXXX,3,99,False,True,6
+IPA,Lagunitas,999,12,186,3,62,False,True,6
+Maximus,Lagunitas,1099,12,246,3,82,False,True,6
+Pils,Lagunitas,899,12,180,3,60,False,True,6
+Sucks,Lagunitas,1099,12,297,3,80,False,True,6
+Undercover Investigation Shutdown,Lagunitas,1099,12,292,3,97.5,False,True,6
+Michelob Light,Michelob,1099,12,113,3,43,False,True,6
+ULTRA,Michelob,999,12,95,3,42,False,True,6
+ULTRA Amber,Michelob,999,12,95,3,40,False,True,6
+ULTRA Light Cider,Michelob,999,12,120,3,40,False,True,6
+ULTRA Lime Cactus,Michelob,699,12,95,3,40,False,True,6
+High Life,Miller,1199,12,143,3,46,False,True,6
+Miller Lite,Miller,1499,12,96,3,42,False,True,6
+Old Rasputin,North Coast,899,12,303,3,90,False,True,6
+Pabst Blue Ribbon,Pabst,1299,12,144,3,46.5,False,True,6
+Boston Lager,Sam Adams,1499,12,175,3,49,False,True,6
+Schlitz,Schlitz,1599,12,146,3,47,False,True,6
+Bock,Shiner,1199,12,143,3,44,False,True,6
+Bigfoot Ale,Sierra Nevada,999,12,330,3,96,False,True,6
+Arrogant Bastard,Stone,495,12,187,3,72,False,True,6
+Double Bastard,Stone,1000,12,336,3,112,False,True,6
+IPA,Stone,1099,12,207,3,69,False,True,6
+Old Guardian,Stone,1000,12,342,3,112,False,True,6
+Pale Ale,Stone,1000,12,162,3,54,False,True,6
+Ruination IPA,Stone,599,22,451,3,82,False,True,6
+Ruination IPA,Stone,1299,12,246,3,82,False,True,6
+Smoked Porter,Stone,599,22,177,3,59,False,True,6
+Sublimely Self-Righteous Ale,Stone,1099,12,261,3,87,False,True,6
+Baba Black Lager,Uinta,999,12,120,3,40,False,True,6
+Ale,Yuengling,700,12,150,3,50,False,True,6
+Black & Tan,Yuengling,700,12,155,3,45,False,True,6
+Lager,Yuengling,700,12,140,3,44,False,True,6
+Light,Yuengling,700,12,98,3,38,False,True,6
+Light Lager,Yuengling,700,12,96,3,36,False,True,6
+Porter,Yuengling,700,12,155,3,45,False,True,6
+Premium,Yuengling,700,12,140,3,44,False,True,6
+Barrell Aged Gonzo,Flying Dog,1899,26,603.25,3,95,False,True,6
+Bloodline,Flying Dog,1199,12,210,3,70,False,True,6
+Counter Culture,Flying Dog,999,12,180,3,60,False,True,6
+Dead Rise,Flying Dog,999,12,168,3,56,False,True,6
+Doggie Style,Flying Dog,999,12,165,3,55,False,True,6
+Double Pale Ale,Flying Dog,1499,12,345,3,115,False,True,6
+Easy IPA,Flying Dog,999,12,141,3,47,False,True,6
+Horn Dog,Flying Dog,1499,12,306,3,102,False,True,6
+In Heat,Flying Dog,999,12,141,3,47,False,True,6
+60 Minute IPA,Dogfish Head,1199,12,209,3,60,False,True,6
+75 Minute IPA,Dogfish Head,999,26,476,3,75,False,True,6
+90 Minute IPA,Dogfish Head,1099,12,294,3,90,False,True,6
+Burton Baton,Dogfish Head,1599,12,320,3,100,False,True,6
+Indian Brown,Dogfish Head,1199,12,216,3,72,False,True,6
+Midas Touch,Dogfish Head,1399,12,307,3,90,False,True,6
+Fat Tire,New Belgium,999,12,160,3,52,False,True,6
+Slow Ride ,New Belgium,999,12,140,3,45,False,True,6

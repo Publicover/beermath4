@@ -19,42 +19,18 @@ class Beer < ActiveRecord::Base
   private
 
     def abv_slash_cal
-      if self.bomber
-        abvcal = ((self.abv.to_f * 22) / (self.calorie)).round(5)
-        self.assign_attributes(abv_per_cal: abvcal)
-      elsif self.quantity
-        abvcal = ((self.abv.to_f * 72) / (self.calorie * 6)).round(5)
-        self.assign_attributes(abv_per_cal: abvcal)
-      else !self.bomber && !self.quantity
-        abvcal = ((self.abv.to_f * 48) / (self.calorie * 4)).round(5)
-        self.assign_attributes(abv_per_cal: abvcal)
-      end
+      abvcal = (((self.abv.to_f * 0.1) * self.ounce * self.pack) / (self.calorie)).round(5)
+      self.assign_attributes(abv_per_cal: abvcal)
     end
 
     def abv_slash_price
-      if self.bomber
-        abvdollar = ((self.abv.to_f * 22) / self.price).round(5)
-        self.assign_attributes(abv_per_price: abvdollar)
-      elsif self.quantity
-        abvdollar = ((self.abv.to_f * 72) / self.price).round(5)
-        self.assign_attributes(abv_per_price: abvdollar)
-      else
-        abvdollar = ((self.abv.to_f * 48) / self.price).round(5)
-        self.assign_attributes(abv_per_price: abvdollar)
-      end
+      abvdollar = (((self.abv.to_f * 0.1) * self.ounce * self.pack) / self.price).round(5)
+      self.assign_attributes(abv_per_price: abvdollar)
     end
 
     def cal_slash_price
-      if self.bomber
-        calprice = ((self.calorie.to_f) / self.price).round(5)
-        self.assign_attributes(calorie_per_price: calprice)
-      elsif self.quantity
-        calprice = ((self.calorie.to_f * 4) / self.price).round(5)
-        self.assign_attributes(calorie_per_price: calprice)
-      else
-        calprice = ((self.calorie.to_f * 6) / self.price).round(5)
-        self.assign_attributes(calorie_per_price: calprice)
-      end
+      calprice = ((self.calorie.to_f * self.pack) / self.price).round(5)
+      self.assign_attributes(calorie_per_price: calprice)
     end
 
     def cal_slash_ounce
