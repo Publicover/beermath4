@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710170228) do
+ActiveRecord::Schema.define(version: 20160710172725) do
 
   create_table "beers", force: :cascade do |t|
     t.string   "name"
@@ -27,8 +27,6 @@ ActiveRecord::Schema.define(version: 20160710170228) do
     t.float    "abv_per_price"
     t.float    "calorie_per_ounce"
     t.float    "calorie_per_price"
-    t.boolean  "quantity"
-    t.boolean  "bomber"
     t.integer  "pack"
   end
 

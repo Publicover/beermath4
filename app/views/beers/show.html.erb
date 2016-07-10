@@ -1,6 +1,8 @@
 <center>
 
-<h1> NOW PRESENTING: BEER NO. <%= "#{@beer.id}" %></h1>
+<h2> NOW PRESENTING: </h2>
+<h1 id="fronttitle"><%= "#{@beer.name}" %></h1>
+<p> from <h3 id="fronttitle"><%= "#{@beer.brewer}" %> </h3>
 
 <p>
   <strong>Name</strong><br>
@@ -35,6 +37,12 @@
   <strong>Rating</strong><br>
   <%= @beer.rating %>
 </p>
+
+<p>
+  <strong>Serving Size</strong><br>
+  <%= @beer.pack %>
+</p>
+
 <br>
 <h4 id="comment_header">AND COMMENTS </h4>
 
