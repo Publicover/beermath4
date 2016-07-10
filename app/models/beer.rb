@@ -49,7 +49,7 @@ class Beer < ActiveRecord::Base
         calprice = ((self.calorie.to_f) / self.price).round(5)
         self.assign_attributes(calorie_per_price: calprice)
       elsif self.quantity
-        calprice = ((self.calorie.to_f * 6) / self.price).round(5)
+        calprice = ((self.calorie.to_f * 4) / self.price).round(5)
         self.assign_attributes(calorie_per_price: calprice)
       else
         calprice = ((self.calorie.to_f * 6) / self.price).round(5)
