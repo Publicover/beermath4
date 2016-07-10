@@ -26,7 +26,7 @@ class Beer < ActiveRecord::Base
         abvcal = ((self.abv.to_f * 72) / (self.calorie * 6)).round(5)
         self.assign_attributes(abv_per_cal: abvcal)
       else
-        abvcal = ((self.abv.to_f * 72) / (self.calorie * 4)).round(5)
+        abvcal = ((self.abv.to_f * 48) / (self.calorie * 4)).round(5)
         self.assign_attributes(abv_per_cal: abvcal)
       end
     end
