@@ -1,13 +1,13 @@
 <center>
 
 <%= link_to "HOME", root_path %>
-<br> 
+<br>
 <% best_beer = Beer.order("abv_per_price DESC").first %>
 
 <p>
 <h3>
-  Right now, the best beer is
-  <p><h1><div class="bestbeer"><%= best_beer.name %></div></h1></p>
+  Right now, the best beer is <%= best_beer.brewer %>'s
+  <p><h1><div class="bestbeer"><%= best_beer.name %><div></h1></p>
   <h3>with <p><div class="bestbeer"><%= best_beer.abv_per_price %> ABV per dollar.</div></p></h3>
 </h3>
 </p>
