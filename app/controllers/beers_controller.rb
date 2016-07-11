@@ -4,7 +4,13 @@ class BeersController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @beers = Beer.order("#{sort_column} #{sort_direction}")
+    @beers = Beer.all
+
+    if params[:search]
+      @beers = Beer.search(params[:search]).order("created_at DESC")
+    else
+      @beers = Beer.order("#{sort_column} #{sort_direction}")
+    end
   end
 
   def show
@@ -49,7 +55,9 @@ class BeersController < ApplicationController
   private
 
     def sortable_columns
-      ["name", "brewer", "price", "ounce", "calorie", "rating", "abv", "abv_per_cal", "abv_per_price", "calorie_per_price", "calorie_per_ounce"]
+      ["name", "brewer", "price", "ounce", "calorie", "rating", "abv",
+        "abv_per_cal", "abv_per_price", "calorie_per_price",
+        "calorie_per_ounce", "pack"]
     end
 
     def sort_column

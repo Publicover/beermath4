@@ -5,6 +5,10 @@
 
 <h1> ALL THE BEERS </h1>
 
+<% if @beers.blank? %>
+  <h4>Sorry, didn't find <%= params[:search] %>.</h4>
+<% end %>
+
 <table class="table table-bordered table-striped">
   <tr>
     <th><%= sort_link "name"%></th>
@@ -25,10 +29,10 @@
     <tr>
       <td><%= beer.name %></td>
       <td><%= beer.brewer %></td>
-      <td><%= beer.price %></td>
+      <td>$<%= beer.price.to_f / 100 %></td>
       <td><%= beer.ounce %></td>
       <td><%= beer.calorie %></td>
-      <td><%= beer.abv %></td>
+      <td><%= beer.abv.to_f / 10 %>%</td>
       <td><%= beer.rating %></td>
       <td><%= beer.pack %></td>
       <td><%= beer.abv_per_cal %></td>

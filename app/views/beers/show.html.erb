@@ -5,18 +5,8 @@
 <p> from <h3 id="fronttitle"><%= "#{@beer.brewer}" %> </h3>
 
 <p>
-  <strong>Name</strong><br>
-  <%= @beer.name %>
-</p>
-
-<p>
-  <strong>Brewer</strong><br>
-  <%= @beer.brewer %>
-</p>
-
-<p>
   <strong>Price</strong><br>
-  <%= @beer.price %>
+  $<%= @beer.price.to_f / 100 %>
 </p>
 
 <p>
@@ -30,7 +20,7 @@
 </p>
 
 <p><strong>ABV</strong><br>
-  <%= @beer.abv %>
+  <%= @beer.abv.to_f / 10 %>%
 </p>
 
 <p>

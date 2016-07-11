@@ -16,6 +16,10 @@ class Beer < ActiveRecord::Base
     # rake import:beers
 
 
+  def self.search(search)
+    where("name LIKE ?", "%#{search}%")
+  end
+
   private
 
     def abv_slash_cal
