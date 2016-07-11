@@ -39,3 +39,8 @@
 #fronttitle {
   color: red;
 }
+
+#searchbar {
+  text-align: right;
+  padding-right: 2cm;
+}
