@@ -10,7 +10,11 @@
   <%= csrf_meta_tags %>
 
   <br>
-  <div id="searchbar">
+  <div class="homelink">
+    <%= link_to "HOME", root_path %>
+  </div>
+
+  <div class="searchbar">
     <%= form_tag(beers_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "FIND A BEER" %>
     <%= submit_tag "Search", :name => nil %>

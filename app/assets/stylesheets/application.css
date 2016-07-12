@@ -40,7 +40,18 @@
   color: red;
 }
 
-#searchbar {
-  text-align: right;
-  padding-right: 2cm;
+.searchbar, .homelink {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  float: left;
+  padding-left: 100px;
 }
+
+.clearfix {
+  clear:both;
+}
+
+/*#homelink {
+  padding-left: 2cm;
+}*/
