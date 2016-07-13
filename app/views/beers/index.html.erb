@@ -5,7 +5,9 @@
 <br>
 
 <% if @beers.blank? %>
-  <h4>Sorry, didn't find <%= params[:search] %>.</h4>
+  <h4>Sorry, we couldn't find <%= params[:search] %>.</h4>
+  <p> But I bet BreweryDB has some information on it. </p>
+  <%= brewery_db_field %>
 <% end %>
 
 <table class="table table-bordered table-striped">
