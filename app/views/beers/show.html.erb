@@ -33,10 +33,10 @@
   <%= @beer.pack %>
 </p>
 
-<%= this_brewer = @beer.brewer %><br>
-<%= this_brewer << " Brewery" %><br>
-<%= brewer_geocode = HTTParty.get("https://maps.googleapis.com/maps/api/geocode/json?address=#{this_brewer}") %>
-<%= location_map = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJN1t_tDeuEmsRUsoyG83frY4&key=#{ENV["GOOGLE_MONSTER_MAPS_KEY"]}" %>
+<% this_brewer = @beer.brewer %><br>
+<% this_brewer << " Brewery" %><br>
+<% brewer_geocode = HTTParty.get("https://maps.googleapis.com/maps/api/geocode/json?address=#{this_brewer}") %>
+<% location_map = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJN1t_tDeuEmsRUsoyG83frY4&key=#{ENV["GOOGLE_MONSTER_MAPS_KEY"]}" %>
 <h3> Click the map for directions to <%= "#{@beer.brewer}" %> </h3>
 
 <br>
