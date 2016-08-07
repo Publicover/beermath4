@@ -15,9 +15,9 @@ class Beer < ActiveRecord::Base
   # call full database csv with
     # rake import:beers
 
-  def initialize
-    @brewery_db_response = JSON.parse(HTTParty.get("http://api.brewerydb.com/v2/beers/?key=#{ENV["BREWERY_DB_KEY"]}&name=bock"))
-  end
+  # def initialize
+  #   @brewery_db_response = JSON.parse(HTTParty.get("http://api.brewerydb.com/v2/beers/?key=#{ENV["BREWERY_DB_KEY"]}&name=bock"))
+  # end
 
   #incomplete here--might want to check exists
 

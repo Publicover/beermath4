@@ -1,28 +1,5 @@
-== README
+== BEERMATH
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Beermath is a database calculates how much alcohol you can buy under specific criteria: price per ABV, price per calorie, price per ounce and similar. Each column on the index page is sortable. It has been modified to accept CSV files through a rake. Anyone can view the information but a user signup is required to manipulate records. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Once a suitable source for local prices has been found (the author is currently in talk with two NC breweries as test cases), Beermath will support its own API.
